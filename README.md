@@ -29,7 +29,7 @@ pip install -r requirements.txt
 4. **Execute the command:**
 
 ```
-python cron_finder.main.py "*/15 0 1,15 * 1-5"
+python main.py "*/15 0 1,15 * 1-5"
 ```
 
 ## Tests
