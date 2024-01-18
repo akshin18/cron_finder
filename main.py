@@ -5,7 +5,11 @@ from src.finder import Finder
 
 def main():
     # "*/15 0 1,15 * 1-5"
-    finder = Finder(sys.argv[1],command=sys.argv[0])
+    sys_data = sys.argv[1].strip().split(" ")
+
+    expression = " ".join(sys_data[:5])
+    command = " ".join(sys_data[5:])
+    finder = Finder(expression,command=command)
     finder.find_info()
     print(finder)
 
